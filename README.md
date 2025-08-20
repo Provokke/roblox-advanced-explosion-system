@@ -190,49 +190,36 @@ Enable debug logging by uncommenting debug print statements in:
 - `ParticleExplosionSystem.server.lua`
 - `ExplosionUI.client.lua`
 
-## 📦 Installation
+## 📥 Installation
 
-### Method 1: Roblox Studio (Recommended)
+### Method 1: Direct Download (.rbxl file) - **RECOMMENDED**
+1. Go to the [Releases page](https://github.com/Provokke/roblox-advanced-explosion-system/releases)
+2. Download the `roblox-advanced-explosion-system.rbxl` file from the latest release
+3. Open the `.rbxl` file directly in Roblox Studio
+4. The system is ready to use immediately with all 13 explosion patterns!
 
-1. **Download the Project**:
-   - Download `RobloxExplosionSystem.rbxlx` from the releases
-   - Open the file in Roblox Studio
-
-2. **Import to Your Game**:
-   - Copy the explosion system modules to your game
-   - Place scripts in appropriate locations (ServerScriptService/StarterPlayerScripts)
-
-### Method 2: Rojo Development
-
-1. **Prerequisites**:
+### Method 2: Rojo Build (For Developers)
+1. Clone this repository:
    ```bash
-   # Install Rojo
-   cargo install rojo
+   git clone https://github.com/Provokke/roblox-advanced-explosion-system.git
+   cd roblox-advanced-explosion-system
+   ```
+
+2. Install Rojo (if not already installed):
+   ```bash
+   # Using Aftman (recommended)
+   aftman install
    
-   # Or download from: https://rojo.space/
+   # Or install Rojo directly
+   # Visit: https://rojo.space/docs/installation/
    ```
 
-2. **Clone and Setup**:
+3. Build the project:
    ```bash
-   git clone https://github.com/yourusername/roblox-explosion-system.git
-   cd roblox-explosion-system
+   rojo build --output explosion-system.rbxl
    ```
 
-3. **Development Server**:
-   ```bash
-   rojo serve
-   ```
-
-4. **Build for Production**:
-   ```bash
-   rojo build -o "YourGame.rbxlx"
-   ```
-
-### Method 3: Standalone Script
-
-1. **Quick Setup**:
-   - Copy `StandaloneExplosionSystem.lua` to ServerScriptService
-   - The script is self-contained and ready to use
+4. Open the generated `.rbxl` file in Roblox Studio
 
 ## 🚀 Quick Start
 
